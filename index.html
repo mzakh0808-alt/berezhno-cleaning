@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173c34">
+  <meta name="description" content="Бережно — клининг квартир, домов и офисов в Москве. Фиксированная цена, проверенные специалисты и экологичные средства. Рассчитайте стоимость уборки онлайн.">
+  <title>Бережно — клининг, которому доверяют</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23173c34'/%3E%3Cpath d='M18 16h15c10 0 16 5 16 13 0 5-3 9-8 11l11 10H39L29 40v10H18V16zm11 9v8h5c3 0 5-1 5-4s-2-4-5-4h-5z' fill='%23dfff8f'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <div class="topline">
+    <div class="container topline__inner">
+      <span>Москва и до 20 км за МКАД</span>
+      <span class="topline__note"><i></i> Есть свободные окна на завтра</span>
+      <a href="tel:+74951203840">+7 495 120-38-40</a>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#main" aria-label="Бережно — на главную">
+        <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M4 3h15c8 0 13 4 13 11 0 4-2 7-6 9l9 10H23L15 23v10H4V3zm11 8v6h4c2 0 3-1 3-3s-1-3-3-3h-4z"/></svg>
+        <span>бережно</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#calculator">Стоимость</a>
+        <a href="#about">О нас</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+      <button class="button button--small header__button" data-open-booking>Заказать уборку <span aria-hidden="true">↗</span></button>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Мобильная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#calculator">Стоимость</a>
+        <a href="#about">О нас</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+      <a class="mobile-menu__phone" href="tel:+74951203840">+7 495 120-38-40</a>
+      <button class="button" data-open-booking>Заказать уборку</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero__content">
+        <div class="eyebrow reveal">Клининг с заботой о вашем времени</div>
+        <h1 class="reveal reveal--delay-1">Чистый дом.<br><em>Ясные мысли.</em></h1>
+        <p class="hero__lead reveal reveal--delay-2">Наведём порядок, пока вы занимаетесь тем, что действительно важно. Без случайных людей, сюрпризов в счёте и резких запахов.</p>
+        <div class="hero__actions reveal reveal--delay-3">
+          <a class="button button--accent" href="#calculator">Рассчитать стоимость <span aria-hidden="true">↗</span></a>
+          <button class="text-link" data-open-booking data-service="Поддерживающая уборка">Выбрать дату <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="hero__proof reveal reveal--delay-3">
+          <div class="avatars" aria-hidden="true">
+            <span>АК</span><span>МС</span><span>ЕЛ</span>
+          </div>
+          <div><strong>4,9 <span class="stars">★★★★★</span></strong><small>по 1 240 отзывам клиентов</small></div>
+        </div>
+      </div>
+      <div class="hero__visual reveal reveal--delay-2">
+        <img src="assets/hero-interior.svg" alt="Светлая гостиная после уборки" width="1000" height="1100">
+        <div class="hero-card hero-card--top">
+          <span class="hero-card__icon">✓</span>
+          <div><strong>Всё под контролем</strong><small>Клинер проверен и застрахован</small></div>
+        </div>
+        <div class="hero-card hero-card--bottom">
+          <small>Ближайшее свободное окно</small>
+          <strong>Завтра, 10:00–14:00</strong>
+          <button data-open-booking>Забронировать <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-bar">
+      <div class="container trust-bar__inner">
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.6-2.8 8-7 10-4.2-2-7-5.4-7-10V6l7-3zM8.5 12l2.2 2.2 4.8-5"/></svg>Материальная ответственность</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c5-3 8-7 8-11a8 8 0 10-16 0c0 4 3 8 8 11zM8 11c3 0 5-2 6-5 1 5-1 8-6 8"/></svg>Безопасно для детей и животных</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v13H4zM8 7V4h8v3M4 12h16M10 12v2h4v-2"/></svg>Всё оборудование уже у нас</span>
+      </div>
+    </div>
+
+    <section class="section container" id="services">
+      <div class="section-heading">
+        <div><span class="section-index">01 / Услуги</span><h2>Порядок бывает разным.<br><em>Результат — один.</em></h2></div>
+        <p>После каждой уборки вы принимаете работу по чек-листу. Если что-то не так — вернёмся и исправим бесплатно.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card service-card--featured">
+          <div class="service-card__top"><span class="service-number">01</span><span class="tag">Выбирают чаще всего</span></div>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><path d="M20 45L50 20l30 25v39H20V45zM40 84V59h20v25M13 47l37-32 37 32"/><path d="M70 24V12h11v23"/></svg>
+          </div>
+          <h3>Поддержи&shy;вающая<br>уборка</h3>
+          <p>Чтобы дом всегда был готов к вашему возвращению. Регулярно или разово.</p>
+          <ul><li>Пыль, полы и санузлы</li><li>Кухня и зеркала</li><li>Замена постельного белья</li></ul>
+          <div class="service-card__bottom"><span>от <strong>4 490 ₽</strong></span><button class="round-link" aria-label="Рассчитать поддерживающую уборку" data-select-service="maintenance">↗</button></div>
+        </article>
+        <article class="service-card">
+          <div class="service-card__top"><span class="service-number">02</span><span class="service-time">5–8 часов</span></div>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><path d="M36 16h28M43 16v22L25 72c-3 6 1 12 8 12h34c7 0 11-6 8-12L57 38V16M35 59h30"/><path d="M44 69h.1M57 73h.1M51 62h.1"/></svg>
+          </div>
+          <h3>Гене&shy;ральная<br>уборка</h3>
+          <p>Дойдём до труднодоступных мест и вернём дому ощущение новизны.</p>
+          <ul><li>Вся поддерживающая уборка</li><li>Внутри кухонных шкафов</li><li>Плинтусы, двери и радиаторы</li></ul>
+          <div class="service-card__bottom"><span>от <strong>6 990 ₽</strong></span><button class="round-link" aria-label="Рассчитать генеральную уборку" data-select-service="deep">↗</button></div>
+        </article>
+        <article class="service-card">
+          <div class="service-card__top"><span class="service-number">03</span><span class="service-time">от 6 часов</span></div>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><path d="M18 79h64M25 79V43h50v36M34 43V25h32v18M34 55h32M34 66h32"/><path d="M18 25l8-8M74 17l8 8M50 8v9"/></svg>
+          </div>
+          <h3>После<br>ремонта</h3>
+          <p>Уберём строительную пыль и следы ремонта. Подготовим дом к переезду.</p>
+          <ul><li>Промышленные пылесосы</li><li>Удаление следов краски и пыли</li><li>Мытьё стен и потолков</li></ul>
+          <div class="service-card__bottom"><span>от <strong>8 990 ₽</strong></span><button class="round-link" aria-label="Рассчитать уборку после ремонта" data-select-service="renovation">↗</button></div>
+        </article>
+      </div>
+      <div class="additional-services">
+        <span>Ещё поможем:</span>
+        <button data-open-booking data-service="Мытьё окон">Мытьё окон</button>
+        <button data-open-booking data-service="Химчистка мебели">Химчистка мебели</button>
+        <button data-open-booking data-service="Уборка офиса">Уборка офиса</button>
+      </div>
+    </section>
+
+    <section class="care-section" id="about">
+      <div class="container care-section__inner">
+        <div class="care-art" aria-hidden="true">
+          <div class="care-art__circle"></div>
+          <svg viewBox="0 0 400 400">
+            <path d="M137 158h126l24 177H113l24-177z" fill="#DFFF8F"/>
+            <path d="M157 158c0-44 18-70 43-70s43 26 43 70" stroke="#DFFF8F" stroke-width="14"/>
+            <path d="M146 215h108M153 254h94" stroke="#173C34" stroke-width="3" opacity=".25"/>
+            <path d="M109 143h54l-8 72h-46V143z" fill="#EF9B77"/>
+            <path d="M120 142V99h20v43M116 99h28" stroke="#F6F3EB" stroke-width="7"/>
+            <path d="M237 132h47v83h-47z" fill="#F6F3EB"/>
+            <path d="M246 132V91h24v41M246 105h24" stroke="#F6F3EB" stroke-width="6"/>
+            <path d="M260 91V72M249 72h22" stroke="#DFFF8F" stroke-width="6"/>
+            <circle cx="290" cy="52" r="10" fill="#EF9B77"/><circle cx="317" cy="86" r="6" fill="#DFFF8F"/><circle cx="80" cy="81" r="8" fill="#DFFF8F"/>
+          </svg>
+          <span class="care-art__label">0% резких запахов</span>
+        </div>
+        <div class="care-content">
+          <span class="section-index section-index--light">02 / Наша философия</span>
+          <h2>Чисто — не значит<br><em>«пахнет химией».</em></h2>
+          <p>Используем профессиональные биоразлагаемые средства. Они справляются с грязью, но безопасны для детей, питомцев и людей с чувствительным обонянием.</p>
+          <div class="care-points">
+            <div><strong>Свои люди</strong><span>Не агрегатор: все клинеры в штате, обучены и проверены.</span></div>
+            <div><strong>Своя ответственность</strong><span>Застраховали каждую уборку на сумму до 500 000 ₽.</span></div>
+          </div>
+          <a class="text-link text-link--light" href="#steps">Как мы работаем <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="calculator">
+      <div class="section-heading calculator-heading">
+        <div><span class="section-index">03 / Калькулятор</span><h2>Узнайте цену<br><em>за пару кликов.</em></h2></div>
+        <p>Это финальная стоимость с оборудованием и средствами. Она изменится только если вы сами добавите услуги.</p>
+      </div>
+      <div class="calculator">
+        <div class="calculator__controls">
+          <fieldset class="calc-group">
+            <legend>Какая уборка нужна?</legend>
+            <div class="segment-control">
+              <label><input type="radio" name="cleaning-type" value="maintenance" checked><span>Поддерживающая</span></label>
+              <label><input type="radio" name="cleaning-type" value="deep"><span>Генеральная</span></label>
+              <label><input type="radio" name="cleaning-type" value="renovation"><span>После ремонта</span></label>
+            </div>
+          </fieldset>
+          <div class="calc-group area-group">
+            <div class="calc-label"><label for="area">Площадь квартиры</label><output id="area-output" for="area">60 м²</output></div>
+            <input class="range" type="range" id="area" min="20" max="200" step="5" value="60" style="--range-progress: 22.22%">
+            <div class="range-labels"><span>20 м²</span><span>200 м²</span></div>
+          </div>
+          <fieldset class="calc-group">
+            <legend>Что добавить? <small>по желанию</small></legend>
+            <div class="extras-grid">
+              <label class="extra"><input type="checkbox" value="windows"><span class="extra__check"></span><span>Окна изнутри и снаружи<small>за одно окно</small></span><strong>+1 500 ₽</strong></label>
+              <label class="extra"><input type="checkbox" value="oven"><span class="extra__check"></span><span>Духовой шкаф<small>включая противни</small></span><strong>+700 ₽</strong></label>
+              <label class="extra"><input type="checkbox" value="fridge"><span class="extra__check"></span><span>Холодильник<small>полная разморозка</small></span><strong>+700 ₽</strong></label>
+              <label class="extra"><input type="checkbox" value="balcony"><span class="extra__check"></span><span>Балкон или лоджия<small>до 5 м²</small></span><strong>+900 ₽</strong></label>
+            </div>
+          </fieldset>
+        </div>
+        <aside class="estimate" aria-live="polite">
+          <span class="estimate__eyebrow">Ваш расчёт</span>
+          <div class="estimate__price"><span id="estimate-price">4 490</span> <small>₽</small></div>
+          <p id="estimate-description">Поддерживающая уборка квартиры 60 м²</p>
+          <div class="estimate__meta">
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="estimate-time">Около 3–4 часов</span></span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.6-2.8 8-7 10-4.2-2-7-5.4-7-10V6l7-3z"/></svg>Цена зафиксирована</span>
+          </div>
+          <ul class="estimate__list" id="estimate-list"><li>Средства и оборудование</li><li>Работа одного клинера</li><li>Проверка по чек-листу</li></ul>
+          <button class="button button--accent button--full" id="book-estimate">Выбрать дату <span>↗</span></button>
+          <small class="estimate__note">Оплата после того, как вы примете работу</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section steps-section" id="steps">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-index">04 / Всё просто</span><h2>Вы живёте своей жизнью.<br><em>Мы наводим порядок.</em></h2></div>
+        </div>
+        <ol class="steps">
+          <li><span class="step-number">01</span><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="7" width="30" height="35" rx="3"/><path d="M16 3v8M32 3v8M9 17h30M16 25h7M16 32h16"/></svg></div><h3>Выбираете время</h3><p>Рассчитайте стоимость и оставьте заявку. Координатор подтвердит детали.</p></li>
+          <li><span class="step-number">02</span><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 42s13-11 13-23a13 13 0 10-26 0c0 12 13 23 13 23z"/><circle cx="24" cy="19" r="5"/></svg></div><h3>Встречаете клинера</h3><p>Приедем со всем необходимым. Можете остаться дома или передать ключи консьержу.</p></li>
+          <li><span class="step-number">03</span><div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 24l10 10L40 12"/><path d="M39 25v15H9V9h22"/></svg></div><h3>Принимаете результат</h3><p>Проверьте уборку по чек-листу и оплатите удобным способом. Всё.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section container" id="reviews">
+      <div class="section-heading reviews-heading">
+        <div><span class="section-index">05 / Отзывы</span><h2>Нас рекомендуют.<br><em>И возвращаются.</em></h2></div>
+        <div class="rating-block"><strong>4,9</strong><div><span class="stars">★★★★★</span><small>1 240 проверенных отзывов</small></div></div>
+      </div>
+      <div class="reviews-grid">
+        <article class="review review--accent"><span class="quote">“</span><blockquote>После генеральной квартира будто стала светлее. Отдельное спасибо за бережное обращение с книгами и растениями — даже не пришлось ничего объяснять.</blockquote><footer><span class="review-avatar">АК</span><div><strong>Анна Крылова</strong><small>Генеральная уборка · Хамовники</small></div><span class="verified">✓ Проверен</span></footer></article>
+        <article class="review"><span class="quote">“</span><blockquote>Заказываю поддерживающую каждые две недели. Один и тот же клинер, никаких звонков в день уборки — просто возвращаюсь в чистую квартиру.</blockquote><footer><span class="review-avatar">МС</span><div><strong>Михаил Соколов</strong><small>Регулярная уборка · Сокол</small></div><span class="verified">✓ Проверен</span></footer></article>
+        <article class="review"><span class="quote">“</span><blockquote>Убрали двушку после ремонта за один день. Пыли не осталось даже на шторах. Цена в конце совпала с расчётом до рубля.</blockquote><footer><span class="review-avatar">ЕЛ</span><div><strong>Елена Лебедева</strong><small>После ремонта · Марьина Роща</small></div><span class="verified">✓ Проверен</span></footer></article>
+      </div>
+    </section>
+
+    <section class="section container faq-section">
+      <div class="faq-intro"><span class="section-index">06 / Вопросы</span><h2>О чём обычно<br><em>спрашивают.</em></h2><p>Не нашли свой вопрос? Позвоните нам — координатор на связи ежедневно с 8:00 до 22:00.</p><a href="tel:+74951203840">+7 495 120-38-40 <span>↗</span></a></div>
+      <div class="faq-list">
+        <details><summary>Нужно ли быть дома во время уборки?<span></span></summary><p>Необязательно. Можете встретить клинера лично, оставить ключи консьержу или использовать кодовый замок. Доступ обсуждаем заранее, а после уборки присылаем фотоотчёт.</p></details>
+        <details><summary>Кто приедет и что нужно подготовить?<span></span></summary><p>Приедет наш штатный клинер со всеми средствами, инвентарём и пылесосом. От вас нужен только доступ к воде и электричеству. По желанию закрепим за вами одного специалиста для регулярных уборок.</p></details>
+        <details><summary>Что делать, если результат не понравится?<span></span></summary><p>Сообщите координатору в течение 24 часов. Мы бесплатно вернёмся и исправим замечания. Материальный ущерб покрывается страховкой до 500 000 ₽.</p></details>
+        <details><summary>Средства безопасны для детей и животных?<span></span></summary><p>Да, используем сертифицированные биоразлагаемые средства без агрессивных отдушек. Если у домашних есть аллергия или особая чувствительность, предупредите нас — подберём состав индивидуально.</p></details>
+        <details><summary>Можно отменить или перенести заказ?<span></span></summary><p>Конечно. Перенесите или отмените уборку бесплатно не позднее чем за 12 часов до приезда клинера. Это можно сделать по телефону или в ответном сообщении координатору.</p></details>
+      </div>
+    </section>
+
+    <section class="container final-cta">
+      <div><span class="section-index section-index--light">Можно выдохнуть</span><h2>Порядок начинается<br><em>с одной заявки.</em></h2></div>
+      <div class="final-cta__action"><p>Выберите удобный день.<br>Остальное мы возьмём на себя.</p><button class="button button--accent" data-open-booking>Заказать уборку <span>↗</span></button></div>
+      <svg class="final-cta__spark" viewBox="0 0 160 160" aria-hidden="true"><path d="M80 4c0 52-24 76-76 76 52 0 76 24 76 76 0-52 24-76 76-76C104 80 80 56 80 4z"/></svg>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand"><a class="logo logo--light" href="#main"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M4 3h15c8 0 13 4 13 11 0 4-2 7-6 9l9 10H23L15 23v10H4V3zm11 8v6h4c2 0 3-1 3-3s-1-3-3-3h-4z"/></svg><span>бережно</span></a><p>Клининг, после которого<br>становится легче.</p></div>
+      <div class="footer__col"><strong>Навигация</strong><a href="#services">Услуги</a><a href="#calculator">Калькулятор</a><a href="#about">О компании</a><a href="#reviews">Отзывы</a></div>
+      <div class="footer__col"><strong>Клиентам</strong><a href="#steps">Как мы работаем</a><a href="#calculator">Дополнительные услуги</a><button data-open-booking>Заказать уборку</button><a href="mailto:hello@berezhno.cleaning">hello@berezhno.cleaning</a></div>
+      <div class="footer__contact"><strong>Ежедневно, 8:00–22:00</strong><a href="tel:+74951203840">+7 495 120-38-40</a><span>Москва и до 20 км за МКАД</span><div class="socials"><a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram">tg</a><a href="https://wa.me/74951203840" target="_blank" rel="noopener" aria-label="WhatsApp">wa</a></div></div>
+    </div>
+    <div class="container footer__bottom"><span>© <span id="current-year">2026</span> ООО «Бережно»</span><a href="#" data-policy>Политика конфиденциальности</a><span>Сделано с заботой о доме</span></div>
+  </footer>
+
+  <div class="mobile-cta"><span>Уборка от <strong>4 490 ₽</strong></span><button class="button button--accent" data-open-booking>Заказать</button></div>
+
+  <dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-title">
+    <button class="dialog-close" aria-label="Закрыть окно">×</button>
+    <div class="booking-layout">
+      <aside class="booking-aside"><a class="logo logo--light" href="#main" tabindex="-1"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M4 3h15c8 0 13 4 13 11 0 4-2 7-6 9l9 10H23L15 23v10H4V3zm11 8v6h4c2 0 3-1 3-3s-1-3-3-3h-4z"/></svg><span>бережно</span></a><div><span class="section-index section-index--light">Ваша заявка</span><h2>Дом будет чистым.<br><em>Обещаем.</em></h2><p>Координатор позвонит в течение 15 минут, подтвердит детали и ответит на вопросы.</p></div><div class="booking-aside__foot">Ежедневно с 8:00 до 22:00<br><a href="tel:+74951203840">+7 495 120-38-40</a></div></aside>
+      <div class="booking-main">
+        <form id="booking-form" novalidate>
+          <span class="section-index">Запись на уборку</span>
+          <h2 id="booking-title">Когда к вам приехать?</h2>
+          <div class="form-summary" id="form-summary" hidden><span id="form-summary-text"></span><strong id="form-summary-price"></strong></div>
+          <div class="form-field"><label for="booking-service">Услуга</label><select id="booking-service" name="service" required><option>Поддерживающая уборка</option><option>Генеральная уборка</option><option>Уборка после ремонта</option><option>Мытьё окон</option><option>Химчистка мебели</option><option>Уборка офиса</option></select></div>
+          <div class="form-row"><div class="form-field"><label for="booking-date">Дата</label><input type="date" id="booking-date" name="date" required><span class="field-error">Выберите дату</span></div><div class="form-field"><label for="booking-time">Время</label><select id="booking-time" name="time" required><option value="">Выберите</option><option>08:00–12:00</option><option>10:00–14:00</option><option>14:00–18:00</option><option>16:00–20:00</option></select><span class="field-error">Выберите время</span></div></div>
+          <div class="form-field"><label for="booking-name">Как к вам обращаться?</label><input type="text" id="booking-name" name="name" placeholder="Ваше имя" autocomplete="name" minlength="2" required><span class="field-error">Введите имя</span></div>
+          <div class="form-field"><label for="booking-phone">Номер телефона</label><input type="tel" id="booking-phone" name="phone" placeholder="+7 999 000-00-00" autocomplete="tel" inputmode="tel" required><span class="field-error">Введите корректный номер</span></div>
+          <label class="consent"><input type="checkbox" id="booking-consent" required><span></span><small>Согласен на обработку персональных данных</small></label>
+          <button class="button button--dark button--full submit-button" type="submit"><span>Оставить заявку</span><i aria-hidden="true">↗</i></button>
+          <p class="form-note">Никакой предоплаты. Детали подтвердим по телефону.</p>
+        </form>
+        <div class="booking-success" id="booking-success" hidden>
+          <div class="success-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 32l11 11 22-25"/></svg></div>
+          <span class="section-index">Заявка принята</span><h2>Спасибо, <span id="success-name"></span>!</h2><p>Зафиксировали уборку на <strong id="success-date"></strong>. Координатор свяжется с вами, чтобы подтвердить детали.</p><div class="success-details"><span>Телефон</span><strong id="success-phone"></strong></div><button class="button button--dark button--full" id="success-close">Хорошо</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="policy-dialog" id="policy-dialog" aria-labelledby="policy-title"><button class="dialog-close" aria-label="Закрыть окно">×</button><span class="section-index">Документы</span><h2 id="policy-title">Политика конфиденциальности</h2><p>Мы используем имя, телефон и выбранные параметры уборки только для обработки заявки и связи с вами. Данные не передаются третьим лицам, кроме случаев, предусмотренных законом.</p><p>Вы можете запросить удаление своих данных по адресу <a href="mailto:hello@berezhno.cleaning">hello@berezhno.cleaning</a>.</p><button class="button button--dark" id="policy-close">Понятно</button></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
